@@ -22,7 +22,8 @@ export default function App() {
       <h1 className='teal-text'>REACT DEV SKILLS</h1>
       <SkillList skills = {skills} />
       <hr />
-      <NewSkillForm />
+      <NewSkillForm addSkill={(newSkill) => setSkills([...skills, newSkill])} />
+
     </div>
     </>
   )
